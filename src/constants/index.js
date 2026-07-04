@@ -110,11 +110,15 @@ const techStack = [
   },
   {
     category: "Styling",
-    items: ["Tailwind CSS", "Sass", "CSS"],
+    items: ["Tailwind CSS", "CSS"],
+  },
+  {
+    category: "UI/UX",
+    items: ["Figma"],
   },
   {
     category: "Backend",
-    items: ["Node.js", "Express", "NestJS", "Hono"],
+    items: ["Node.js", "Express", "Springboot",],
   },
   {
     category: "Database",
@@ -132,28 +136,22 @@ const socials = [
     text: "Github",
     icon: "/icons/github.svg",
     bg: "#f4656b",
-    link: "https://github.com/JavaScript-Mastery-Pro",
+    link: "https://github.com/Leadhason",
   },
-  {
-    id: 2,
-    text: "Platform",
-    icon: "/icons/atom.svg",
-    bg: "#4bcb63",
-    link: "https://jsmastery.com/",
-  },
+
   {
     id: 3,
     text: "Twitter/X",
     icon: "/icons/twitter.svg",
     bg: "#ff866b",
-    link: "https://x.com/jsmasterypro",
+    link: "https://x.com/leadhason",
   },
   {
     id: 4,
     text: "LinkedIn",
     icon: "/icons/linkedin.svg",
     bg: "#05b6f6",
-    link: "https://www.linkedin.com/company/javascriptmastery/posts/?feedView=all",
+    link: "https://www.linkedin.com/in/leadhason/",
   },
 ];
 
@@ -188,19 +186,19 @@ const photosLinks = [
 const gallery = [
   {
     id: 1,
-    img: "/images/gal1.png",
+    img: "/images/gal.png",
   },
   {
     id: 2,
-    img: "/images/gal2.png",
+    img: "/images/gal.png",
   },
   {
     id: 3,
-    img: "/images/gal3.png",
+    img: "/images/gal.png",
   },
   {
     id: 4,
-    img: "/images/gal4.png",
+    img: "/images/gal.png",
   },
 ];
 
@@ -225,7 +223,7 @@ const WORK_LOCATION = {
     // ▶ Project 1
     {
       id: 5,
-      name: "Nike Ecommerce Website Application",
+      name: "StoneBase | An e-commerce administration and Inventory management application",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-5", // icon position inside Finder
@@ -233,43 +231,43 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "Nike Project.txt",
+          name: "StoneBase.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
           description: [
-            "The Nike eCommerce website is a sleek and modern platform designed for shopping the latest Nike collections.",
-            "Instead of a simple online store, it delivers an immersive experience with bold visuals, interactive product displays, and smooth navigation.",
-            "Think of it like walking into a flagship Nike store—but right from your phone or laptop.",
-            "It's built with Next.js and Tailwind, ensuring fast performance, responsive design, and a clean, premium look.",
+            "StoneBase is a modern admin and inventory management platform built for managing an eCommerce business from end to end.",
+            "Instead of juggling spreadsheets and disconnected tools, it brings inventory, orders, and product management into one clean, unified dashboard.",
+            "Think of it like a mission control center—giving the business a clear, real-time view of everything moving through the store.",
+            "It's built with a Linear/Stripe-inspired design system, ensuring a fast, professional interface that feels as solid as the products it manages.",
           ],
         },
         {
           id: 2,
-          name: "nike.com",
+          name: "stonebase.com",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://youtu.be/fZdTYswuZjU?si=Awjl-pIst9e09_UU",
+          href: "https://e-co-mu.vercel.app",
           position: "top-10 right-20",
         },
         {
           id: 4,
-          name: "nike.png",
+          name: "stonebase.png",
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
           position: "top-52 right-80",
-          imageUrl: "/images/project-1.png",
+          imageUrl: "/images/stonebase.png",
         },
         {
           id: 5,
-          name: "Design.fig",
+          name: "repo.github",
           icon: "/images/plain.png",
           kind: "file",
-          fileType: "fig",
-          href: "https://google.com",
+          fileType: "url",
+          href: "https://github.com/Leadhason/e-co",
           position: "top-60 right-20",
         },
       ],
@@ -278,7 +276,7 @@ const WORK_LOCATION = {
     // ▶ Project 2
     {
       id: 6,
-      name: "AI Resume Analyzer",
+      name: "Kado| AI-powered study assistant",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-52 right-80",
@@ -286,43 +284,43 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "AI Resume Analyzer Project.txt",
+          name: "AI-powered study assistant.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 right-10",
           description: [
-            "AI Resume Analyzer is a smart tool that helps you perfect your resume with instant feedback.",
-            "Instead of guessing what recruiters want, you get AI-powered insights on keywords, formatting, and overall impact.",
-            "Think of it like having a career coach—pointing out strengths, fixing weaknesses, and boosting your chances of landing interviews.",
-            "It's built with Next.js and Tailwind, so it runs fast, looks professional, and works seamlessly on any device.",
+             "Kado is a unified study workspace that brings your documents, notes, focus timer, and AI assistant into one seamless environment.",
+              "Instead of switching between five different apps to read, take notes, and stay focused, everything lives in a single, distraction-free space.",
+              "Think of it like a study room built just for you—reader, notes, music, and an AI assistant, all within reach at once.",
+              "It's built with Next.js and Prisma, so it's fast, reliable, and designed to keep you in flow instead of hunting for tools.",
           ],
         },
         {
           id: 2,
-          name: "ai-resume-analyzer.com",
+          name: "kado.com",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://youtu.be/iYOz165wGkQ?si=R1hs8Legl200m0Cl",
+          href: "https://kado-ten-ashen.vercel.app/",
           position: "top-20 left-20",
         },
         {
           id: 4,
-          name: "ai-resume-analyzer.png",
+          name: "akado.png",
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
           position: "top-52 left-80",
-          imageUrl: "/images/project-2.png",
+          imageUrl: "/images/kado.png",
         },
         {
           id: 5,
-          name: "Design.fig",
+          name: "repo.github",
           icon: "/images/plain.png",
           kind: "file",
-          fileType: "fig",
-          href: "https://google.com",
+          fileType: "url",
+          href: "https://github.com/Leadhason/Kado",
           position: "top-60 left-5",
         },
       ],
@@ -331,7 +329,7 @@ const WORK_LOCATION = {
     // ▶ Project 3
     {
       id: 7,
-      name: "Food Delivery App",
+      name: "Eden Hair Salon",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-80",
@@ -339,43 +337,43 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "Food Delivery App Project.txt",
+          name: "Eden Hair Salon Project.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
           description: [
-            "Our Food Delivery App is a fast and convenient way to order meals from your favorite restaurants.",
-            "Instead of making calls or waiting in line, you can browse menus, customize orders, and track deliveries in real time.",
-            "Think of it like having your favorite restaurants in your pocket—ready to deliver anytime, anywhere.",
-            "It’s built with React Native, so it works smoothly on both iOS and Android with a clean, modern design.",
+              "The Eden Hair Salon website gives clients a beautiful, easy way to explore services and book their next appointment online.",
+              "Instead of calling in or waiting for a reply, clients can browse the full service menu, see pricing, and book a slot in just a few clicks.",
+              "Think of it like walking past the salon window and being able to step right in—no phone tag, no guesswork, just a smooth booking experience.",
+              "It's built with Next.js and Tailwind, so it loads fast, looks polished on any device, and gives the salon a professional online presence that matches the quality of their work.",
           ],
         },
         {
           id: 2,
-          name: "food-delivery-app.com",
+          name: "eden-hair-salon.com",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://youtu.be/LKrX390fJMw?si=cExkuVhf2DTV9G2-",
+          href: "https://eden-health-beta.vercel.app/",
           position: "top-10 right-20",
         },
         {
           id: 4,
-          name: "food-delivery-app.png",
+          name: "eden-hair-salon.png",
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
           position: "top-52 right-80",
-          imageUrl: "/images/project-3.png",
+          imageUrl: "/images/eden-health.png",
         },
         {
           id: 5,
-          name: "Design.fig",
+          name: "repo.github",
           icon: "/images/plain.png",
           kind: "file",
-          fileType: "fig",
-          href: "https://google.com",
+          fileType: "url",
+          href: "https://github.com/Leadhason/Eden-Health",
           position: "top-60 right-20",
         },
       ],
@@ -392,12 +390,12 @@ const ABOUT_LOCATION = {
   children: [
     {
       id: 1,
-      name: "me.png",
+      name: "Leadhason.png",
       icon: "/images/image.png",
       kind: "file",
       fileType: "img",
       position: "top-10 left-5",
-      imageUrl: "/images/adrian.jpg",
+      imageUrl: "/images/gal.png",
     },
     {
       id: 2,
@@ -406,7 +404,7 @@ const ABOUT_LOCATION = {
       kind: "file",
       fileType: "img",
       position: "top-28 right-72",
-      imageUrl: "/images/adrian-2.jpg",
+      imageUrl: "/images/gal.png",
     },
     {
       id: 3,
@@ -415,7 +413,7 @@ const ABOUT_LOCATION = {
       kind: "file",
       fileType: "img",
       position: "top-52 left-80",
-      imageUrl: "/images/adrian-3.jpeg",
+      imageUrl: "/images/gal.png ",
     },
     {
       id: 4,
@@ -425,12 +423,12 @@ const ABOUT_LOCATION = {
       fileType: "txt",
       position: "top-60 left-5",
       subtitle: "Meet the Developer Behind the Code",
-      image: "/images/adrian.jpg",
+      image: "/images/gal.png",
       description: [
-        "Hey! I’m Adrian 👋, a web developer who enjoys building sleek, interactive websites that actually work well.",
-        "I specialize in JavaScript, React, and Next.js—and I love making things feel smooth, fast, and just a little bit delightful.",
-        "I’m big on clean UI, good UX, and writing code that doesn’t need a search party to debug.",
-        "Outside of dev work, you'll find me tweaking layouts at 2AM, sipping overpriced coffee, or impulse-buying gadgets I absolutely convinced myself I needed 😅",
+        "Hey! I'm Leaderson 👋, a Computer Science student at KNUST and a web developer who builds products that solve real problems—not just ones that look good in a demo.",
+        "I work across the full stack with Next.js, PostgreSQL, Prisma, and Clerk, and I've shipped and deployed client projects end-to-end, from database design to production on Vercel. I care as much about how a system is architected as how it feels to use.",
+        "I'm big on clean code, solid data modeling, and understanding the reasoning behind a solution rather than just shipping what works.",
+        "Outside of client work, you'll find me deep in a Linux terminal, building out side projects, or reading up on how the tools I use actually work under the hood 😅",
       ],
     },
   ],
@@ -493,14 +491,14 @@ export const locations = {
 const INITIAL_Z_INDEX = 1000;
 
 const WINDOW_CONFIG = {
-  finder: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
-  contact: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
-  resume: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
-  safari: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
-  photos: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
-  terminal: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
-  txtfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
-  imgfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
+  finder:   { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null, isMaximized: false, prevBounds: null, bounds: { x: 120, y: 80,  width: 900, height: 600 } },
+  contact:  { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null, isMaximized: false, prevBounds: null, bounds: { x: 200, y: 120, width: 500, height: 400 } },
+  resume:   { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null, isMaximized: false, prevBounds: null, bounds: { x: 250, y: 100, width: 700, height: 850 } },
+  safari:   { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null, isMaximized: false, prevBounds: null, bounds: { x: 150, y: 60,  width: 1000, height: 650 } },
+  photos:   { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null, isMaximized: false, prevBounds: null, bounds: { x: 180, y: 90,  width: 850, height: 600 } },
+  terminal: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null, isMaximized: false, prevBounds: null, bounds: { x: 220, y: 140, width: 700, height: 450 } },
+  txtfile:  { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null, isMaximized: false, prevBounds: null, bounds: { x: 300, y: 150, width: 550, height: 450 } },
+  imgfile:  { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null, isMaximized: false, prevBounds: null, bounds: { x: 280, y: 130, width: 700, height: 500 } },
 };
 
 export { INITIAL_Z_INDEX, WINDOW_CONFIG };

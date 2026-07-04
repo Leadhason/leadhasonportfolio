@@ -1,33 +1,59 @@
 import { create } from 'zustand';
 import { immer } from 'zustand/middleware/immer'
-import { WINDOW_CONFIG, INITIAL_Z_INDEX,  } from '#constants/index.js'
-
+import { WINDOW_CONFIG, INITIAL_Z_INDEX } from '#constants/index.js'
 
 const useWindowStore = create(
-    immer((set) => ({
-        windows: WINDOW_CONFIG,
-        nextZIndex: INITIAL_Z_INDEX + 1,
-        
-        openWindow: (windowKey, data = null) => set((state) => {
-            const win = state.windows[windowKey];
-            win.isOpen = true;
-            win.zIndex = state.nextZIndex;
-            win.data = data ?? win.data;
-            state.nextZIndex++;
-        }),
+  immer((set) => ({
+    windows: WINDOW_CONFIG,
+    nextZIndex: INITIAL_Z_INDEX + 1,
 
-        closeWindow: (windowKey) => set((state) => {
-            const win = state.windows[windowKey];
-            win.isOpen = false;
-            win.zIndex = INITIAL_Z_INDEX;
-            win.data = null;
-        }),
+    openWindow: (windowKey, data = null) => set((state) => {
+      const win = state.windows[windowKey];
+      win.isOpen = true;
+      win.zIndex = state.nextZIndex;
+      win.data = data ?? win.data;
+      state.nextZIndex++;
+    }),
 
-        focusWindow: (windowKey) => set((state) => {
-            const win = state.windows[windowKey];
-            win.zIndex = state.nextZIndex++;
-        })
-    }))
+    closeWindow: (windowKey) => set((state) => {
+      const win = state.windows[windowKey];
+      win.isOpen = false;
+      win.zIndex = INITIAL_Z_INDEX;
+      win.data = null;
+    }),
+
+    maximizeWindow: (windowKey) => set((state) => {
+      const win = state.windows[windowKey];
+      if (win.isMaximized) {
+        // Restore
+        win.isMaximized = false;
+        win.bounds = win.prevBounds;
+        win.prevBounds = null;
+      } else {
+        // Maximize — save current bounds, expand to fill viewport
+        win.prevBounds = win.bounds;
+        win.bounds = {
+          x: 0,
+          y: 0,
+          width: window.innerWidth,
+          height: window.innerHeight,
+        };
+        win.isMaximized = true;
+      }
+      win.zIndex = state.nextZIndex++;
+    }),
+
+    focusWindow: (windowKey) => set((state) => {
+      const win = state.windows[windowKey];
+      win.zIndex = state.nextZIndex++;
+    }),
+
+    setBounds: (windowKey, bounds) => set((state) => {
+      const win = state.windows[windowKey];
+      win.bounds = bounds;
+      win.zIndex = state.nextZIndex++;
+    }),
+  }))
 );
 
 export default useWindowStore;

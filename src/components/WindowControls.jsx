@@ -2,13 +2,13 @@ import React from 'react'
 import useWindowStore from '#store/window.js';
 
 const WindowControls = ({ target }) => {
-  const { closeWindow } = useWindowStore();
+  const { closeWindow, maximizeWindow } = useWindowStore();
     
   return (
     <div id="window-controls">
         <div className="close" onClick={() => closeWindow(target)}/>
         <div className="minimize" onClick={() => closeWindow(target)}/>
-        <div className="maximize" onClick={() => closeWindow(target)}/>
+        <div className="maximize" onClick={() => maximizeWindow(target)}/>
     </div>
   )
 }

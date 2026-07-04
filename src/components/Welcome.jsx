@@ -102,7 +102,7 @@ const Welcome = () => {
         {renderText(
           "Hey I'm Leadhason. Welcome to my",
           "text-3xl font-georama",
-          100
+          200
         )}
       </p>
       <h1 ref={titleRef} className="mt-7" aria-label="Portfolio">
